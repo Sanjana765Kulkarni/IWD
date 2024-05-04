@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-login.css">
+    <title>Login Form</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop src="Video (online-video-cutter.com).mp4"></video>
+    <div class="login-container">
+        <h1>Sign-in</h1>
+        <form action="#">
+            <div class="input-container">
+                <label for="Username" >Username</label>
+                <input type="text" id="Username"name="Username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" required><br><br><br>
+            </div>
+            <button onclick="redirect()" type="submit">Sign In</button>
+        </form>
+        <div class="sign-in-with">
+            <p>OR</p>
+            <div class="sign-in-options">
+                <button onclick="redirect()" style="background-color: red;color: white;" class="google" type="submit">Sign In with Google</button>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function redirect()
+        {
+            window.location.href="Homepage.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="to-do list1.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">=</a>
+        <a class="logout"href="login.html">logout</a></div>
+    
+    </div>
+
+    <div style="background-color: #000;color: white; width: 200px" class="content">
+        <h2 class="logo">Logo</h2><hr>
+
+        <div class="card">
+            <a href="#"><h3>Important,urgent</h3></a>
+        </div>
+
+        <div class="card">
+            <h3>Important,non-urgent</h3>
+            
+        </div>
+
+        <div class="card">
+            <h3>Unimportant,urgent</h3>
+            
+        </div>
+
+        <div class="card">
+            <h3>Unimportant,non-urgent</h3>
+        </div>
+        <hr>
+
+        <div class="card">
+            <h3>Personal Events</h3>
+        </div>
+
+        <div class="card">
+            <h3>Work Events</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="todo-list">
+            <!-- i had to resize the image as its a bit big picture  -->
+             <h2>To-Do list <img width="30px" height="30px" src="Tick.png" alt="check icon"></h2>
+             <div class="row">
+                <input type="text" id="input-box" placeholder="Add your to do">
+                <button onclick="addTask()">Add</button>
+             </div>
+             <ul id="list-container">
+                <!-- <li class="checked">task 1</li>
+                <li>task 2</li>
+                <li>task 3</li> -->
+             </ul>
+        </div>
+    </div>
+    
+    <br>
+    <div class="container">
+
+    </div>
+    <br>
+    <div class="container">
+
+    </div>
+    <br>
+    <div class="container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

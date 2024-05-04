@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 500px;
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    margin-right: 1rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+.vertical-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    overflow-x: hidden;
+    padding-top: 15px;
+}
+
+.vertical-nav .nav {
+    flex-direction: column;
+}
+
+.vertical-nav .nav-link {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.vertical-nav .nav-link.active {
+    color: #007bff;
+}

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;/*the vh is like the view port height - the visible height of the screen*/
+    /*background is gradiented for the merge thing and the gradient is horizontal if 90 is given bascically its either side of the line*/
+    background: linear-gradient(150deg,#e4e1dc,#e7e5e1);
+    padding: 10px;  
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 500px;  /* the size of the block-todo list/ is changed the whole inner contents will resize according to that */
+    background: #d6d1ca;
+    /* the margin's and padding's value is in the order top laft-right bottom*/
+    margin: 250px auto 30px;
+    padding: 20px 30px 70px;
+    border-radius:10px;
+}
+.todo-list h2{
+    color: #002765;
+    display:flex;/*flex because we have to align the elements*/
+    align-items:center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.todo-list h2 image{
+    width: 20px;  
+    margin-left: 100px; /* to give space between the icon and the text */
+
+}
+.row{
+  display: flex;  
+  align-items: center;
+  justify-content: space-between ;   /*to give space */
+  background: #f2f1ee;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border:none;
+    outline: none;
+    background: #f6f5f3;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    /* padding : top-bottom left-right */
+    padding: 16px 20px;
+    background: #8e826e; /* color of the button */
+    color: #fff; /* color of the text on the button */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 10px 35px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+/* to add the circle in form of the list to check later  */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('Unchecked.png');
+    background-size: cover;
+    top: 8px;
+    left: 0px;
+}
+ul li.checked{
+    color:#8a7e6a;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('Checked.png');
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #cbc5bc;
+    border-radius: 50%;
+}
